@@ -4,11 +4,11 @@
 
 void University::enterDate(char* str) {
     SetConsoleCP(1251);
-    //cin >> str;
+    cin >> str;
     SetConsoleCP(866);
 
-    strcpy(str, "Пенза\0");
-    cout << "Пенза" << endl;
+    //strcpy(str, "Пенза\0");
+    //cout << "Пенза" << endl;
 }
 
 void University::printDate(const char* str, WORD color) {
@@ -27,7 +27,6 @@ University::University() {
     strcpy(mCountry, "-");
     strcpy(mSity, "-");
     strcpy(mStreet, "-");
-
 }
 
 University::University(const University* university) {
@@ -38,7 +37,6 @@ University::University(const University* university) {
     strcpy(mCountry, university->mCountry);
     strcpy(mSity, university->mSity);
     strcpy(mStreet, university->mStreet);
-
 }
 
 University::University(const char* country, const char* sity, const char* street) {

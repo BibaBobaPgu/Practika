@@ -4,11 +4,11 @@
 
 void Fio::enterDate(char *str) {
     SetConsoleCP(1251);
-    //cin >> str;
+    cin >> str;
     SetConsoleCP(866);
 
-    strcpy(str, "Алексей\0");
-    cout << "Алексей" << endl;
+    //strcpy(str, "Алексей\0");
+    //cout << "Алексей" << endl;
 }
 
 void Fio::printDate(const char *str, WORD color) {
